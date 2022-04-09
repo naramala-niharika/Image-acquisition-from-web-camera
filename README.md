@@ -35,26 +35,43 @@ End the program
 ## i) Write the frame as JPG file:
 ```
 import cv2
+
 video = cv2.VideoCapture(0)
+
 while(True):
+
     t,frame = video.read()
+    
     cv2.imwrite("Newpicture.jpg",frame)
+    
     result=False
+    
     if cv2.waitKey(1) == ord('b'):
+    
         break
+        
 video.release()
+
 cv2.destroyAllWindows()
 
 ## ii) Display the video:
 ```
 import cv2
+
 pic = cv2.VideoCapture(0)
+
 while True:
+
     t,frame = pic.read()
+    
     cv2.imshow('frame',frame)
-    if cv2.waitKey(1) == ord('b'):      
+    
+    if cv2.waitKey(1) == ord('b'):  
+    
         break
+        
 pic.release()
+
 cv2.destroyAllWindows()
 
 
@@ -63,9 +80,13 @@ cv2.destroyAllWindows()
 ## iii) Display the video by resizing the window:
 ```
 import numpy as np
+
 import cv2
+
 im = cv2.VideoCapture(0)
+
 while True:
+
     ret,frame = im.read()
     width = int(im.get(3))
     height = int(im.get(4))
@@ -88,9 +109,13 @@ cv2.destroyAllWindows()
 ## iv) Rotate and display the video:
 ```
 import numpy as np
+
 import cv2
+
 im = cv2.VideoCapture(0)
+
 while True:
+
     ret,frame = im.read()
     width = int(im.get(3))
     height = int(im.get(4))
