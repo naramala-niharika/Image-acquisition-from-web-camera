@@ -131,30 +131,25 @@ while True:
 im.release()
 cv2.destroyAllWindows()
 ```
-## Output
+## Output:
 
 ### i) Write the frame as JPG image:
-![Output]()
+![Output](https://github.com/naramala-niharika/Image-acquisition-from-web-camera/blob/main/L1.jpg?raw=true)
 
 
 ### ii) Display the video:
-![Output]()
+![Output](https://github.com/naramala-niharika/Image-acquisition-from-web-camera/blob/main/L2.jpg?raw=true)
 
 
 
 ### iii) Display the video by resizing the window:
-![Output]()
+![Output](https://github.com/naramala-niharika/Image-acquisition-from-web-camera/blob/main/L3.jpg?raw=true)
 
 
 
 
 ### iv) Rotate and display the video:
-![Output]()
-
-
-
-
-
+![Output](https://github.com/naramala-niharika/Image-acquisition-from-web-camera/blob/main/L4.jpg?raw=true)
 
 ## Result:
 Thus the image is accessed from webcamera and displayed using openCV.
